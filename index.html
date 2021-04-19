@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+                <div class="navbar-nav d-flex justify-content-end align-items-center">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                   <a class="nav-link" href="#">Shoes</a>
                   <a class="nav-link" href="#">Backpack</a>
@@ -33,8 +34,8 @@
                     <div class="col-md-7">
                       <h1>Mega LCD TV For Sports</h1>
                       <p>This is the best tv in the world for people who just want to waste time in front of tv.</p>
-                      <h3>$1200</h3>
-                      <button class="btn btn-warning">Buy Now >></button>
+                      <h3 class="price">$1200</h3>
+                      <button class="buy-now-button">Buy Now >></button>
                     </div>
                     <div class="col-md-5">
                         <img src="images/tv.png" class="d-block w-100" alt="...">
@@ -48,8 +49,8 @@
                       <p>
                         This is the best headphone in the world for people who just want to waste time in front of funky world.
                         </p>
-                      <h3>$420</h3>
-                      <button class="btn btn-warning">Buy Now..</button>
+                      <h3 class="price">$420</h3>
+                      <button class="buy-now-button">Buy Now..</button>
                     </div>
                     <div class="col-md-5"><img src="images/headphone.png" class="d-block w-100" alt="..."></div>
                 </div>
@@ -59,8 +60,8 @@
                     <div class="col-md-7">
                       <h1>X-Box for your living room</h1>
                         <p>This is the best x-box in the world for people who just want to waste time in front of fake sports.</p>
-                        <h3>$600</h3>
-                        <button class="btn btn-warning">Buy Now..</button></p>
+                        <h3 class="price">$600</h3>
+                        <button class="buy-now-button">Buy Now..</button></p>
                     </div>
                     <div class="col-md-5">
                         <img src="images/xbox.png" class="d-block w-100" alt="..."></div>
@@ -79,34 +80,29 @@
     </header>
 
     <main class="container">
-        <section class="container overflow-hidden categorise mt-5">
-            <div class="row gx-5">
-              <div class="col">
-               <div class="p-3 rounded bg-warning d-flex align-items-center justify-content-around">  
-                <h1 class="text-white">
-                    Watch
-                </h1>
-            <img src="images/watch.png" alt="">
+      <div class="container categories">
+        <h2 class="p-5">Categories</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="cat1 d-flex justify-content-between align-items-center">
+                    <h1>Watch</h1>
+                    <img src="images/watch.png" alt="">
+                </div>
             </div>
-              </div>
-              <div class="col">
-                <div class="p-3 rounded bg-success d-flex align-items-center justify-content-around">  
-                 <h1 class="text-white">
-                     Bag
-                 </h1>
-             <img src="images/bag.png" alt="">
-             </div>
-               </div>
-               <div class="col">
-                <div class="p-3 rounded bg-primary d-flex align-items-center justify-content-around">  
-                 <h1 class="text-white">
-                     Shoes
-                 </h1>
-             <img src="images/shoes.png" alt="">
-             </div>
-               </div>
-             
-        </section>
+            <div class="col-md-4">
+                <div class="cat2 d-flex justify-content-between align-items-center">
+                    <h1>Bag</h1>
+                    <img src="images/bag.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cat3 d-flex justify-content-between align-items-center">
+                    <h1>Shoe</h1>
+                    <img src="images/shoes.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 
         <section class="mt-5">
             <h3>Shoes</h3>
@@ -193,14 +189,14 @@
                 </div>
             </div>
         </section>
-        <section style="height: 300px;" class="d-flex align-items-center justify-content-center bg-info">
-            <div>
-                <h1>LET'S STAY IN TOUCH</h1>
-            <h5>Get updates on sales, specials and more</h5>
-            <input type="text" placeholder="Enter Your Email Address">
-            <button class="btn btn-warning">Submit</button>
-            </div>
-        </section>
+        <div class="container orange-bg d-flex justify-content-center align-items-center" id="subscribe">
+          <div>
+              <h3>LET'S STAY IN TOUCH</h3>
+              <h6>Get Update on Sale , Secial and more</h6>
+              <input class="form-control" type="text"><br>
+              <button class="buy-now-button">Submit</button>
+          </div>
+      </div>
     </main>
     <footer class="text-center mt-5">
       <small>2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small>
